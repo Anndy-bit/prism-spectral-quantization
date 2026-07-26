@@ -1,0 +1,87 @@
+\documentclass{scpe}
+
+\begin{document}
+
+% =======================================================
+% 【PUBLISHER METADATA】: To be filled by the Editorial Office
+% =======================================================
+\articletype{Research Article}
+\pubyear{2026}
+\volume{29}
+\issue{1}
+\doinum{10.1234/scpe.2026.001}
+\papercitation{Author, A.; Author, B. Title of the Paper. \textit{Scalable Comput. Pract. Exp.} \textbf{2026}, \textit{27}(1). \url{https://doi.org/10.1234/scpe.2026.001}}
+\paperhistory{
+    Received: 12 May 2026 \\ 
+    Revised: 20 May 2026 \\
+    Accepted: 10 June 2026 \\ 
+    Published: 15 June 2026
+}
+
+% =======================================================
+% 【AUTHOR SECTION】: Please fill in your paper details below
+% =======================================================
+\papertitle{Official SCPE Manuscript Template and Author Guidelines: A Comprehensive Formatting Guide}
+
+% Please add your ORCID inside the \orcid{} command
+\paperauthor{First Author$^{1,2}$\orcid{0000-0001-2345-6789}, Second Author$^{2,*}$\orcid{0000-0002-3456-7890} and Third Author$^{1}$}
+
+\affiliation{$^{1}$ Department of Computer Science, University Name, City, Country \\
+$^{2}$ Department of Mathematics, University Name, City, Country \\
+$^{*}$ Corresponding author: email@example.com}
+
+\begin{abstract}
+The abstract is a crucial component of your manuscript, serving as the first, and sometimes only, section read by peers and researchers. Therefore, it must be meticulously crafted to provide a concise yet comprehensive overview of your entire study. For submissions to \textit{Scalable Computing: Practice and Experience} (SCPE), we strictly require the abstract to be a single, continuous paragraph containing between 200 and 250 words. This specific length ensures that you have adequate space to detail your research background, core objectives, proposed methodology, primary results, and ultimate conclusions, without overwhelming the reader with excessive exposition. Please refrain from using any citations, undefined abbreviations, or mathematical equations within this section. The abstract should be completely self-contained and stand alone from the main text. By adhering to these formatting guidelines, you not only expedite the editorial review process but also significantly enhance the discoverability and readability of your published work in global academic databases. This current placeholder text contains exactly two hundred and twenty words, perfectly illustrating the visual footprint and optimal text density expected for a standard SCPE journal submission. We thank you for your cooperation and look forward to your valuable contributions to our journal.
+\end{abstract}
+
+\keywords{author guidelines; manuscript formatting; LaTeX template; scalable computing}
+
+% -------------------------------------------------------
+\section{Introduction}
+Welcome to the official LaTeX template for \textit{Scalable Computing: Practice and Experience} (SCPE). This document serves both as a structural template and an instructional manual for authors \cite{ref-article, ref-book}. 
+
+By replacing the placeholder text in this document, you ensure that your manuscript strictly conforms to the typographical and structural standards required by SCPE \cite{ref-conference, ref-thesis}. 
+
+\section{Formatting Guidelines}
+
+\subsection{Equations}
+Please use the standard LaTeX \texttt{equation} environment. \textbf{DO NOT} use external packages like \texttt{\textbackslash scalebox} or \texttt{\textbackslash resizebox} to shrink equations. If an equation is too long, break it using \texttt{split} or \texttt{align}.
+\begin{equation}
+    E = mc^2
+\end{equation}
+
+\subsection{Figures and Tables}
+All figures must be provided in high resolution (at least 300 DPI) using PDF, PNG, or JPEG formats. Do not insert formulas as images. 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.45\linewidth]{fig1.png} 
+    \caption{This is an example of a figure. Ensure your images are at least 300 DPI.}
+    \label{fig:example}
+\end{figure}
+
+For tables, please utilize the \texttt{booktabs} package (\texttt{\textbackslash toprule}, \texttt{\textbackslash midrule}, \texttt{\textbackslash bottomrule}) to create professional three-line tables. \textbf{Vertical lines are strictly prohibited.}
+
+\begin{table}[htbp]
+    \centering
+    \caption{This is an example of a standard three-line table.}
+    \begin{tabular}{llc}
+        \toprule
+        \textbf{Item} & \textbf{Description} & \textbf{Value} \\
+        \midrule
+        Rule 1 & No vertical lines & Required \\
+        Rule 2 & No scalebox used & Required \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{Conclusion}
+Please double-check your manuscript against these guidelines before submission. The metadata block on the first page (including DOI, dates, and citation) will be updated by the editorial office upon acceptance \cite{ref-report, ref-website}. 
+
+% -------------------------------------------------------
+% References
+% -------------------------------------------------------
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,19 @@
+{
+  "lora_fp32": {
+    "perplexity": 4.822002410888672,
+    "total_tokens": 1978
+  },
+  "lora_q8": {
+    "perplexity": 4.823568344116211,
+    "total_tokens": 1978
+  },
+  "_meta": {
+    "variant": "lora",
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "n_layers": 28,
+    "quant_bits": 8,
+    "n_heldout": 16,
+    "max_seq": 384,
+    "elapsed_seconds": 3690.496682405472
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "svmo_fp32": {
+    "perplexity": 7.015717506408691,
+    "total_tokens": 1978
+  },
+  "svmo_q8": {
+    "perplexity": 7.036403179168701,
+    "total_tokens": 1978
+  },
+  "_meta": {
+    "variant": "svmo",
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "n_layers": 28,
+    "quant_bits": 8,
+    "n_heldout": 16,
+    "max_seq": 384,
+    "elapsed_seconds": 3814.2262873649597
+  }
+}

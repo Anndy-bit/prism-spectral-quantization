@@ -395,6 +395,8 @@ The comparison one would reach for first, ranking adapters by how much they chan
 
 The point extends past this one pair of adapters. Any parameter-efficient method judged on the accuracy it reaches, then merged and quantized only afterward for deployment, carries an unstated assumption that its merge behaves the way its size suggests. That assumption held for neither adapter measured here, in the direction expected. Checking it directly, with a magnitude-matched control or a real quantization pass, costs little next to the training already spent producing the adapter in the first place. Extending that check to other spectral and additive PEFT methods, to calibrated quantizers such as GPTQ or AWQ rather than the simulated round-trip used here, and to bit-widths between 8 and 4, would show whether the ordering found on this one model and this one adapter pair holds more generally or is specific to the checkpoints measured.
 
+Code for every measurement reported in this paper, including the streaming implementation that makes CPU-only evaluation of a 7B model tractable, is available at~\cite{prism-code}.
+
 \bibliographystyle{IEEEtran}
 \bibliography{references}
 

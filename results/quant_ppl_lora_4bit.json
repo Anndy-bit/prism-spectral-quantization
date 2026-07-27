@@ -1,19 +1,19 @@
 {
   "lora_fp32": {
-    "perplexity": 5.715511798858643,
-    "total_tokens": 1021
+    "perplexity": 4.822002410888672,
+    "total_tokens": 1978
   },
   "lora_q4": {
-    "perplexity": 10.078805923461914,
-    "total_tokens": 1021
+    "perplexity": 8.534433364868164,
+    "total_tokens": 1978
   },
   "_meta": {
     "variant": "lora",
     "model": "Qwen/Qwen2.5-7B-Instruct",
     "n_layers": 28,
     "quant_bits": 4,
-    "n_heldout": 8,
+    "n_heldout": 16,
     "max_seq": 384,
-    "elapsed_seconds": 2388.0204985141754
+    "elapsed_seconds": 3689.590158700943
   }
 }
